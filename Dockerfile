@@ -3,7 +3,7 @@ FROM node
 RUN mkdir -p /app/client
 WORKDIR /app/client
 
-
+COPY /client/yarn*.json /app/client
 COPY /client/package.json /app/client/
 
 RUN yarn install --pure-lockfile

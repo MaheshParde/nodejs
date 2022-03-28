@@ -5,8 +5,8 @@ WORKDIR /app/client
 
 
 COPY /client/package.json /app/client/
-RUN npm install -g yarn
-RUN yarn install
+
+RUN npm install
 
 COPY . /app/client/
 

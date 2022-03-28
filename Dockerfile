@@ -5,7 +5,7 @@ WORKDIR /app/client
 
 COPY /client/package.json /app/client/
 
-RUN yarn install --pure-lockfile
+RUN npm install --force
 
 COPY . /app/client/
 

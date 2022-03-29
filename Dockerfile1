@@ -1,0 +1,8 @@
+FROM node
+RUN mkdir -p /app/server
+WORKDIR /app/server
+COPY /server/ .
+RUN npm install
+COPY . ./
+EXPOSE 5000
+CMD ["npm", "start"]

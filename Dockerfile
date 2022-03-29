@@ -1,7 +1,7 @@
 FROM node
 RUN mkdir -p /app/client
 WORKDIR /app/client
-COPY /client/package.json .
+COPY /client/ .
 RUN npm install
 COPY . ./
 EXPOSE 3000

@@ -5,7 +5,7 @@ WORKDIR /app/client
 
 COPY /client/package.json /app/client/
 RUN yarn cache clean
-RUN yarn install --force
+RUN npm install
 
 COPY . /app/client/
 EXPOSE 3000

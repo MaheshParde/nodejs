@@ -4,7 +4,7 @@ pipeline {
   tools {nodejs "node"}
 
 	environment{
-	registry="mrchelsea/mernimage"
+	registry="mrchelsea/randomwildtesting"
 	registryCredential='dockerhub'
 	dockerImage=''
 	}

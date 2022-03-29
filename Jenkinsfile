@@ -4,13 +4,11 @@ pipeline {
   tools {nodejs "node"}
 
 	environment{
-	registry="mrchelsea/mernimage"
+	registry="mrchelsea"
 	registryCredential='dockerhub'
 	dockerImage=''
 	}
     
-    //def registry = 'mrchelsea/testing-docker'
-    //def registryCredential = 'dockerhub'
 	stages{
 	stage('Git') {
 		steps{
@@ -18,14 +16,15 @@ pipeline {
 		}	
 	}
 	
-	stage('Building image') {
+	stage('Building image for front end') {
 		steps{
 			script{
-			 	dockerImage=docker.build registry	
+				sh 'docker build -f Dockerfile -t $registry/frontend .'
+                		sh 'docker build -f Dockerfile1 -t $registry/backend .'
 			}
 		}
 	}
-	stage('Registring image') {
+	/*stage('Registring image for front end') {
 		steps{
 			script{
 				docker.withRegistry('',registryCredential){
@@ -33,7 +32,8 @@ pipeline {
 				}
 			}
 		}
-	}
+	}*/
+		
 	}
     
 }

@@ -1,5 +1,4 @@
 FROM node
-RUN mkdir -p /app
 RUN mkdir -p /app/client
 WORKDIR /app/client
 COPY /client/package.json .

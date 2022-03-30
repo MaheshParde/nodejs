@@ -36,7 +36,7 @@ pipeline {
 		}
 	}*/
 		
-	stage('SonarQube'){
+	/*stage('SonarQube'){
 		tools{
 		jdk "jdk11"
 		}
@@ -56,7 +56,7 @@ pipeline {
 		}		
 		}
 	
-	}	
+	}*/	
 		
 	
 	/*stage('Building image for front end') {

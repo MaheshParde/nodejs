@@ -16,14 +16,6 @@ pipeline {
 		}	
 	}
 		
-	stage('Build'){
-		steps{
-		sh 'npm cache clean -force'
-		sh 'npm install /client/'
-		sh 'npm install /server/'
-		sh 'npm install -g jest'
-		}
-	}
 	
 	stage('Building image for front end') {
 		steps{

@@ -36,7 +36,7 @@ pipeline {
 		withSonarQubeEnv('sonar_coverage'){
 		sh '''
 		/var/lib/jenkins/tools/hudson.plugins.sonar.SonarRunnerInstallation/sonar_coverage/bin/sonar-scanner \
-		-Dsonar.host.url=http://192.168.122.138:9004/sonarqube \
+		-Dsonar.host.url=http://192.168.122.141:9004/sonarqube \
 		-Dsonar.login=443b17ef84fc21dfd66dba03fc8fe3299edae9de \
 		-Dsonar.projectKey=rahul \
 		-Dsonar.projectName=rahul					

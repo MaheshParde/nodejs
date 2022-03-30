@@ -18,7 +18,7 @@ pipeline {
 		
 	stage('Build'){
 		steps{
-		sh 'cd $workspace/client/'
+		sh 'cd $workspace/'
 		sh 'npm cache clean -force'
 		sh 'npm install'
 		sh 'npm install -g jest'

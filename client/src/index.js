@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'rsad';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
@@ -15,4 +15,4 @@ ReactDOM.render(
     <App />
   </Provider>,
   document.getElementById('root'),
-);;
+);

@@ -18,7 +18,7 @@ pipeline {
 		
 	stage('Build'){
 		steps{
-		sh 'cd $JENKINS_HOME/workspace/client'
+		sh 'cd $JENKINS_HOME/workspace/serverclienttesting/client'
 		sh 'npm cache clean -force'
 		sh 'npm install'
 		sh 'npm install -g jest'

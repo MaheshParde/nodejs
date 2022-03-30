@@ -15,6 +15,14 @@ pipeline {
 		git 'https://github.com/rahulguptaft9/project_mern_memories'
 		}	
 	}
+		
+	stage('Build'){
+		steps{
+		sh 'npm cache clean -force'
+		sh 'npm install'
+		sh 'npm install -g jest'
+		}
+	}
 	
 	stage('Building image for front end') {
 		steps{

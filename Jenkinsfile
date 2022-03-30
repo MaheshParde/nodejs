@@ -21,6 +21,7 @@ pipeline {
 		sh 'npm cache clean -force'
 		sh 'npm install'
 		sh 'npm install -g jest'
+		sh 'npm build'
 		}
 	}	
 		

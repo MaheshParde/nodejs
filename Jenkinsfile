@@ -19,8 +19,8 @@ pipeline {
 	stage('Build'){
 		steps{
 		sh 'npm cache clean -force'
-		sh 'npm install /client/package.json'
-		sh 'npm install /server/package.json'
+		sh 'npm install /client/'
+		sh 'npm install /server/'
 		sh 'npm install -g jest'
 		}
 	}

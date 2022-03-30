@@ -23,17 +23,9 @@
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "test-cov": "jest --coverage --coverageDirectory=output/coverage/jest",
-    "sonar": "node sonar_coverage.js"
+    "eject": "react-scripts eject"
   },
-  "jest": {
-    "coverageReporters": [
-      "text",
-      "cobertura"
-    ]
-  },
-  "eslintConfig": {
+    "eslintConfig": {
     "extends": "react-app"
   },
   "browserslist": {

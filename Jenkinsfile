@@ -67,6 +67,17 @@ pipeline {
 			}
 		}
 	}
+		
+	stage('Registring image for front end') {
+		steps{
+			script{
+				docker.withRegistry('',registryCredential){
+				sh 'docker push $registry/frontend'
+                       		sh 'docker push $registry/backend'
+				}
+			}
+		}
+	}	
 	/*stage('Registring image for front end') {
 		steps{
 			script{

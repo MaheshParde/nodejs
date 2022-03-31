@@ -16,7 +16,7 @@ pipeline {
 		}	
 	}
 		
-	stage('Build'){
+	/*stage('Build'){
 		steps{
 		//sh 'cd $JENKINS_HOME/workspace/serverclienttesting/client'
 		sh 'npm cache clean -force'
@@ -25,7 +25,7 @@ pipeline {
 		sh 'cd $JENKINS_HOME/workspace/serverclienttesting/client && npm  run build'
 		
 		}
-	}	
+	}*/	
 		
 	/*stage('Code Coverage'){
 		steps{	

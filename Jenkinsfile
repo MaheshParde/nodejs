@@ -59,7 +59,7 @@ pipeline {
 	}*/	
 		
 	
-	stage('Building image for front end') {
+	stage('Building image for both frontend and backend') {
 		steps{
 			script{
 				sh 'docker build -f Dockerfile -t $registry/frontend .'
@@ -68,7 +68,7 @@ pipeline {
 		}
 	}
 		
-	stage('Registring image for front end') {
+	stage('Registring image for both frontend and backend') {
 		steps{
 			script{
 				docker.withRegistry('',registryCredential){
@@ -78,7 +78,7 @@ pipeline {
 			}
 		}
 	}	
-	/*stage('Registring image for front end') {
+	/*stage('Registring image for both frontend and backend') {
 		steps{
 			script{
 				docker.withRegistry('',registryCredential){

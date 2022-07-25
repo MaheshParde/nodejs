@@ -27,14 +27,14 @@ pipeline {
 		}
 	}*/	
 		
-	/*stage('Code Coverage'){
+	stage('Code Coverage'){
 		steps{	
 			script{
 		sh 'npm run test-cov'
 		}
 		step([$class: 'CoberturaPublisher', coberturaReportFile: 'output/coverage/jest/cobertura-coverage.xml'])	
 		}
-	}*/
+	}
 		
 	/*stage('SonarQube'){
 		tools{

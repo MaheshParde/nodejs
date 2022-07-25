@@ -30,7 +30,7 @@ pipeline {
 	stage('Code Coverage'){
 		steps{	
 			script{
-		sh 'npm run test-cov /var/lib/jenkins/workspace/serverclienttesting/client/'
+		sh 'cd $JENKINS_HOME/workspace/serverclienttesting/client && npm run test-cov'
 		}
 		step([$class: 'CoberturaPublisher', coberturaReportFile: 'output/coverage/jest/cobertura-coverage.xml'])	
 		}

@@ -24,8 +24,8 @@ agent any
 				//sh 'npm cache clean --force'
 				// sh 'npm update'
 				// sh 'ng build'
-				sh 'npm build --prod'
-				//sh 'npm run ng -- build --prod'
+				// sh 'npm build --prod'
+				sh 'npm run ng -- build --prod'
 				}
 			}
 		stage('copy'){

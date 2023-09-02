@@ -7,13 +7,13 @@ agent any
 			git 'https://github.com/MaheshParde/nodejs.git'
 			}	
 		}
-		stage('Install dependencies') {
+		/*stage('Install dependencies') {
             steps {
                 // Install Node.js dependencies
                 sh 'npm install'
             }
         }
-		/*stage('Test') {
+		stage('Test') {
 			steps {
 				sh 'npm run test-headless'
 				}

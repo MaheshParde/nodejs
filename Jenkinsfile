@@ -4,7 +4,7 @@ agent any
   	stages{
 		stage('checkout code') {
 		steps{
-			git 'https://gitlab.com/parademahesh/angular.git'
+			git 'https://github.com/MaheshParde/nodejs.git'
 			}	
 		}
 		stage('Install dependencies') {

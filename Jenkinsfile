@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('checkout code') {
             steps {
-                git 'https://gitlab.com/parademahesh/angularrepo.git'
+                git 'https://github.com/MaheshParde/nodejs.git'
             }	
         }
         stage('Build') {
@@ -18,11 +18,11 @@ pipeline {
                 sh "npm run build"
             }
         }
-	stage('Build') {
+	/*stage('Build') {
 		steps {
 			sh 'npm run ng -- build --prod'
 			}
-		}
+		}*/
 	}
 	post{
     always{
